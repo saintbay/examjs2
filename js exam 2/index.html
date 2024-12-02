@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styke.css">
+</head>
+<body>
+    <div class="weather-app">
+        <header>
+            <h1>Прогноз погоды</h1>
+            <div class="search-bar">
+                <input type="text" id="city" placeholder="Enter city">
+                <button id="search">Поиск...</button>
+            </div>
+        </header>
+        <nav>
+            <button data-tab="today" class="tab active">Погода на сегодня</button>
+            <button data-tab="forecast" class="tab">5ти дневный прогноз</button>
+        </nav>
+        <main>
+            <section id="today" class="tab_content active">
+                <div id="summary" class="weather_summary"></div>
+                <div id="details" class="weather_details"></div>
+                <div id="popular_cities"></div>
+            </section>
+            <section id="forecast" class="tab_content">
+                <div id="forecast_list"></div>
+                <div id="forecast_details"></div>
+            </section>
+            
+        </main>
+    </div>
+
+    <script src="exam.js"></script>
+</body>
+</html>
